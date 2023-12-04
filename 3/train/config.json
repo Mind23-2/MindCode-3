@@ -1,0 +1,28 @@
+{
+	"SDK": "ModelArts",
+	"code_dir": "train/train_dir/",
+	"boot_file": "train.py",
+	"outputs": [{
+		"output_dir": "train/output/",
+		"name": "out_path"
+	}],
+	"hypeparameters": [
+		{"name": "epochs",
+		"value": "200"}
+	],
+	"frameworks": {
+		"framework_type": "MPI",
+		"framework_version": "mindspore_1.3.0-cuda_10.1-py_3.7-ubuntu_1804-x86_64"
+	},
+	"train_instance_type": "modelarts.p3.large.public",
+	"log_url": "train/log/",
+	"env_variables": {},
+	"job_description": "MobileNet2训练",
+	"inputs": [
+		{"input_url": "datasets/drizzlezyk/MobileNetV2_image/DogCroissants/",
+		"name": "data_url"},
+		{"input_url": "models/drizzlezyk/MobileNetV2/mobilenet_v2_1.0_224.ckpt",
+		"name": "pretrain_url"}
+	],
+	"job_name": "test-2"
+}

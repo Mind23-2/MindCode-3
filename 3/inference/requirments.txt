@@ -1,0 +1,9 @@
+mindspore==1.6.2
+mindvision==0.1.0
+gradio==2.7.5.2
+numpy==1.21.6
+fastai==1.0.58
+opencv-contrib-python
+opencv-contrib-python-headless
+opencv-python
+opencv-python-headless
